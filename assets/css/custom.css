@@ -370,7 +370,38 @@ footer .footer {
     margin-right: 0.5rem;
   }
 
-  .fab-button .fab-icon {
+.fab-button .fab-icon {
     height: 16px;
   }
+}
+
+.fab-button .fab-icon {
+    height: 16px;
+  }
+}
+
+.fab-button .fab-icon {
+    height: 16px;
+  }
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0.5em 1em;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-brand {
+  font-size: 20px;
+  font-weight: bold;
+  color: #00f0ff;
+  white-space: nowrap;
 }
