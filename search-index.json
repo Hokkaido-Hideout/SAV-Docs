@@ -1,0 +1,77 @@
+[
+  {
+    "id": "installation",
+    "title": "Installation",
+    "body": "Open the Epic Games Launcher and install the Savior plugin from Marketplace, or the FAB store.\nYou must have a valid Epic games account to purchase any products from Unreal Marketplace."
+  },
+  {
+    "id": "how-to-setup-a-slot",
+    "title": "How to Setup a Slot",
+    "body": "As always, create a Slot Asset on Asset Browser;\nOpening the Asset you can quickly adjust default Properties such as Default Player Name, Levels Thumbnails, etc:"
+  },
+  {
+    "id": "how-to-save-load",
+    "title": "How to Save Load",
+    "body": "All you have to do is right click any graph on any of your Blueprints and search from one of main nodes in “Savior” section.\nThese main Save/Load functions automatically creates a runtime instance of a Slot object for you… So you don’t have to instantiate anything, just reference the Slot Asset and let the node work:  From any UMG Widget you simply setup your “On Button Clicked” events to call one of these “Savior 2” functions.\nIt’s THAT simple, everything in scope marked ‘SaveGame’ tag will save or load:  Manual Slot Instances Management If you desire to perform custom Save/Load operations and not necessarily just fire a \" Save Game World \" to save everything, you can do so by building a process starting from the New Slot Instance Node . Example:"
+  },
+  {
+    "id": "how-to-setup-pickups",
+    "title": "How to Setup Pickups",
+    "body": "Any Actor you wish to remember it was destroyed and should not respawn on Level load, you have to add a “Destroyed” Boolean Property to it. And mark it ‘Save Game’ tag as well:  The Property must be a Boolean named “Destroyed”, case sensitive.\nThe Property must be marked ‘Save Game’ tag. Then in your Blueprint Graph, create a new Function calling it whatever you’d like, this Function will be a substitute of “Destroy Actor” node for the Game.\nInside this Graph Function set the value of “Destroyed” to true, but don’t destroy this Actor before you save the Game, maybe hide it instead:  Having that Boolean “Destroyed” Property set to TRUE will tell the Plugin that this Actor must destroy itself once the Level was loaded, making it be gone the next time a Player visits that Level… To do that, when you want a Pickup to be destroyed, simply call your newly created Function that hides the Actor and sets “ Destroyed ” to True instead of destroying the Actor with a Destroy node:  Once the Game i"
+  },
+  {
+    "id": "how-to-setup-procedural-actors",
+    "title": "How to Setup Procedural Actors",
+    "body": "An Actor, or Component, you are spawning at Runtime will be saved as usual.\nHowever loading them back is a complex task because we cannot control whatever ID the internal engine will assign to a runtime spawned Object.\nOften the new Object’s ID will be random internal pointer that used to reference another object; to overcome this obstacle to Save & Load “Procedural Actor” properly, your Procedural Class is required to implement three things: Implement the “ SAVIOR_Procedural ” Function Interface.\nInclude a “Guid” Property to its Variables List, named “ SGUID ”.\nIn its Construction Script, call a special node called “Make SGUID”.\nThose three simple steps above will guarantee your Procedural Class will be loaded correctly from Slot’s Data without mismatching Data with another instance of your Class also spawned in Runtime, turning them into Absolutely Identifiable Procedural Objects.  First, within desired Procedural Actor’s Blueprint, we have to implement our “Procedural” Function Inte"
+  },
+  {
+    "id": "understanding-sguid",
+    "title": "Understanding SGUID",
+    "body": "There are three types of Actors in any Unreal Engine world:\n* Actors you've placed in the Level by hand.\n* Actors that are unique, but only exist at runtime.\n* Actors that you spawn multiple instances of same class at runtime. For each type of Actor above, you have to understand how Unreal Engine identifies these instances. When you place any amount of instantiated Actors in the Level, Unreal Editor automatically resolves instance ID, these IDs created are the same at runtime. When you have a Game Mode that is spawned at runtime, and then spawns an instance of a Character, new IDs are created, but you usually treat these Actors as singleton Actors. That means, if Savior knows the class of your Game Mode, it doesn't have to care if that Character is Character C 0 or Character C 55. It knows that it's the Player's Character. However when you spawn at runtime any amount of instances of any arbitrary class, the same process of resolving instance IDs is performed by the engine; and Savior c"
+  },
+  {
+    "id": "tips-n-tricks",
+    "title": "Tips n Tricks",
+    "body": "One Template Class for multiple slot instances You only need 1 slot template asset, then you can just override the Slot File Name property, like in this example below:"
+  },
+  {
+    "id": "savior-in-c",
+    "title": "Savior in C++",
+    "body": "If you have native C++ classes you desire to implement Savior's API directly, follow these steps: Build.cs: You must add Savior3 module to your Build.cs list of dependencies >> PublicDependencyModuleNames.AddRange(new string[]\n{\n    \"Core\", \"CoreUObject\", \"Engine\", \"InputCore\", \"Savior\"\n}); C++: Your class definition have to include Savior hears >> #include \"Savior.h\"\n#include \"SaviorMetaData.h\" Your class should implement one or both of Savior's event interfaces >> UCLASS()\nclass MYGAME_API ALoot : public AActor, public ISAVIOR_Serializable, public ISAVIOR_Procedural\n{\n    // ...\n} Override Interface functions >> UFUNCTION() virtual void OnLoaded_Implementation(const FSlotMeta &MetaData) override; Include and construct SGUID Property >> UPROPERTY() FGuid SGUID; AMyActor::AMyActor()\n{\n    SGUID = USavior3::MakeActorGUID( this , EGuidGeneratorMode::ResolvedNameToGUID );\n} Full Example: .H #pragma once\n\n#include \"Savior3.h\"\n#include \"SaviorMetaData.h\"\n#include \"CoreMinimal.h\"\n#include \"G"
+  },
+  {
+    "id": "faqs",
+    "title": "FAQs",
+    "body": "How, why my Actor isn't saving? How, why my Actor isn't saving? Chances are you did not setup a SGUID Property properly. Save World or Game Mode returns Failed result, why? Save World or Game Mode returns Failed result, why? Check thread state with Get Thread Safety node. If you have another save process running, you have to wait until previous process is complete to start a new one. I still can't save anything?!\n   Make sure you are creating an instance with New Slot Instance node . Don't try to save data directly into your\n   Slot Class. I still can't save anything?!\n   Make sure you are creating an instance with New Slot Instance node . Don't try to save data directly into your\n   Slot Class."
+  },
+  {
+    "id": "extras",
+    "title": "Extras",
+    "body": "Savior is one of few save systems in Unreal that supports saving object pointers. And it's the only that actually supports saving a chain of nested UObjects. This is perfect for complex inventory systems based on the UObject class. In Unreal Engine 5, Savior has built-in support for recording and restoring states of Chaos Destruction System 's fracturing and geometry collections ( EXPERIMENTAL ). In Unreal Engine 5, Savior has partial built-in support for saving and loading the state of Mutable Characters and their parts ( EXPERIMENTAL )."
+  },
+  {
+    "id": "module-specifications",
+    "title": "Module Specifications",
+    "body": "The following is technical documentation for the Savior.h header file from the Unreal Engine plugin Savior Auto-Save Plugin by Bruno Xavier Leite."
+  },
+  {
+    "id": "usaviorsettings-plugin-configuration-settings",
+    "title": "📦 USaviorSettings – Plugin Configuration Settings",
+    "body": "This class holds plugin-level configuration data, categorized under gameplay, performance, and object handling. 🧩 UPROPERTY Members General Settings int32 DefaultPlayerID : ID for the default player controller. int32 DefaultPlayerLevel : Local player's level (for progression-based games). FString DefaultPlayerName : Name or alias of the player. FString DefaultChapter : Current chapter of the game/story. FString DefaultLocation : Name of the map or level being saved. Performance bool RespawnDynamicActors : Enable auto-respawn of missing actors. bool RespawnDynamicComponents : Enable auto-respawn of missing components. bool AccurateDynamicRespawnChecks : Ensures accurate respawn, potentially impacting performance. Reflector Scope TSet<TSubclassOf<UObject>> InstanceScope : Auto-instantiation classes. TSet<TSubclassOf<UObject>> RespawnScope : Auto-respawn target classes."
+  },
+  {
+    "id": "usavior-core-save-load-slot-object",
+    "title": "💾 USavior – Core Save/Load Slot Object",
+    "body": "This class provides a runtime object that handles saving and loading of game state data. 🧩 UPROPERTY Members Configuration Debug , DeepLogs , RuntimeMode – Control debug output and threading behavior. ObjectScope , ComponentScope , ActorScope – Define serialization targets. Load Screen Includes customizable fields like LoadScreenMode , SplashImage , FeedbackSAVE , BackBlurPower , etc. UI/UX SlotFileName , SlotThumbnail , LevelThumbnails – Control UI visuals and file metadata. Events Bindable multicast delegates such as EVENT_OnBeginDataSAVE , EVENT_OnFinishDataLOAD , etc. Misc Runtime-related fields: WriteMetaOnSave , IgnorePawnTransformOnLoad , SlotMeta , SlotData , World"
+  },
+  {
+    "id": "ufunction-methods-overview",
+    "title": "🛠️ UFUNCTION Methods Overview",
+    "body": "1. Core Slot File I/O WriteSlotToFile , ReadSlotFromFile , DeleteSlotFile , FindSlotFile SaveSlotMetaData , LoadSlotMetaData GetSlotMetaData() 2. Object/Component/Actor Save/Load Save: SaveObject , SaveActor , SaveComponent , etc. Load: LoadObject , LoadActor , LoadComponent , etc. Hierarchical: SaveObjectHierarchy , LoadActorHierarchy , etc. 3. Game Scope Save/Load SaveGameWorld , LoadGameWorld SaveGameMode , LoadGameMode SaveGameInstance , LoadGameInstance SavePlayerState , LoadPlayerState 4. Level and Data Layer Serialization SaveLevel , LoadLevel SaveWorldLayers , LoadWorldLayers SaveGameFeatures , LoadGameFeatures 5. Low-Level Record Management GenerateRecord_* , UnpackRecord_* FindRecordByName , FindRecordByGUID AppendDataRecords , InsertDataRecord , RemoveDataRecordByName , etc. 6. GUID and ID Utilities MakeObjectGUID , CreateSGUID , MatchesGUID , MarkActorAutoDestroyed , etc. Check/Generate/Query SGUIDs 7. UI/UX Getters and Setters SetChapter , SetProgress , SetPlayerName , Get"
+  },
+  {
+    "id": "summary",
+    "title": "✅ Summary",
+    "body": "The USavior class exposes a highly granular and flexible API to Unreal Engine’s Blueprint system, empowering developers to implement robust save/load functionality, auto-respawn logic, UI/UX enhancements, and system configuration—entirely through C++ or Blueprints."
+  }
+]
