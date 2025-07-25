@@ -1,0 +1,6 @@
+title: HKH
+remote_theme: pages-themes/midnight@v0.2.0
+markdown: GFM
+
+plugins:
+  - jekyll-remote-theme

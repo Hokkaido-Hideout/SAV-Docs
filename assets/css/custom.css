@@ -1,0 +1,376 @@
+@font-face {
+  font-family: 'Hack';
+  src: url('/assets/fonts/Hack.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Hide the GitHub button */
+.github-button {
+  display: none !important;
+}
+
+/* Hide the footer credit */
+footer .footer {
+  display: none !important;
+}
+
+/* Hide brand on screens narrower than 768px */
+@media (max-width: 900px) {
+  .nav-brand {
+    display: none !important;
+  }
+}
+
+.main-content pre {
+  font-family: 'VT323', monospace;
+  font-size: 18px;
+}
+
+/* Add 10% horizontal margins to the main content */
+.main-content {
+  margin-left: 10%;
+  margin-right: 10%;
+  max-width: 80%;
+  padding-top: 50px; /* To avoid overlap */
+}
+
+/* Add top/bottom spacing */
+.main-content {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+/* Center and clamp images */
+.main-content img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 1em auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.top-toolbar {
+  background-color: #151515;
+  color: #fff;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 999;
+  position: fixed;
+  top: 0;
+}
+
+.nav-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 0.5em 10%;
+  border-radius: 0 0 4px 4px;
+  backdrop-filter: blur(4px);
+}
+
+.nav-brand {
+  font-weight: bold;
+  font-size: 14px;
+  align-self: center;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 10px 5px;
+  display: block;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #1c1c1c;
+  min-width: 160px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  z-index: 1000;
+}
+
+.dropdown-content li a {
+  padding: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content {
+  opacity: 0;
+  transform: translateY(5px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+}
+
+.dropdown:hover .dropdown-content {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Wrap for zoom and centering */
+.mermaid-zoom-wrapper {
+  overflow: auto;
+  max-width: 100%;
+  margin: 2em auto;
+  padding: 1em;
+  border-radius: 6px;
+  background-color: #1a1a1a;
+  text-align: center;
+}
+
+/* Enable mouse drag panning (horizontal) */
+.mermaid-zoom-wrapper svg {
+  cursor: grab;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Fix node labels breaking layout */
+.mermaid text {
+  font-family: sans-serif;
+  font-size: 14px;
+  fill: #ccc;
+}
+
+/* Brand text styling */
+.nav-brand {
+  color: #00BFFF; /* DeepSkyBlue / Ocean Blue */
+  font-weight: bold;
+  font-size: 16px;
+  text-shadow: 0 0 2px #F0F8FF; /* Pearl glow */
+}
+
+/* Menu link text color */
+.nav-links a {
+  color: #FFA500; /* Golden Orange */
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+/* Menu hover effect */
+.nav-links a:hover {
+  color: #FFCC66; /* Softer gold on hover */
+  text-decoration: underline;
+}
+
+/* Markdown headers: ocean blue like nav-brand */
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5,
+.main-content h6 {
+  color: #00BFFF; /* Ocean Blue */
+  font-weight: 600;
+  margin-top: 1.5em;
+}
+
+.main-content h1:hover {
+  color: #00FFFF; /* Neon Aqua */
+  text-shadow: 0 0 6px #00FFFF;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-content h2:hover {
+  color: #00FFFF; /* Neon Aqua */
+  text-shadow: 0 0 6px #00FFFF;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-content h3:hover {
+  color: #00FFFF; /* Neon Aqua */
+  text-shadow: 0 0 6px #00FFFF;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Terminal title bar */
+.main-content pre::after {
+  content: "▶ user@hkh-terminal:~$";
+  display: block;
+  position: absolute;
+  top: -1.8em;
+  left: 0.5em;
+  color: #00FF66;
+  font-family: monospace;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+/* CRT terminal-style code blocks */
+.main-content pre {
+  background-color: #0b0b0b; /* Deep CRT black */
+  color: #00FFFF; /* Terminal green */
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  line-height: 1.4;
+  padding: 1em;
+  border-radius: 6px;
+  overflow-x: auto;
+  box-shadow: 0 0 10px #00FFFF;
+  text-shadow: 0 0 2px #00FF66;
+  position: relative;
+}
+
+/* Code blocks: Green scanline overlay */
+.main-content pre::before {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 2px,
+    rgba(0, 255, 100, 0.05) 3px,
+    transparent 4px
+  );
+}
+
+.search-wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 0.75em 1em;
+  background: #0d1117;
+  border-top: 1px solid #222;
+  z-index: 998;
+}
+
+#search-box {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  padding: 0.5em;
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 4px;
+  color: #FFA500;
+}
+
+#search-results .search-hit {
+  margin-bottom: 1em;
+  padding: 1em;
+  background: #111;
+  border-left: 4px solid #FFA500;
+}
+
+#search-results .search-hit a {
+  color: #00BFFF;
+  text-decoration: none;
+}
+
+#search-results {
+  transition: opacity 0.25s ease;
+}
+
+#search-results.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@keyframes crt-glow {
+  0%, 100% { text-shadow: 0 0 2px #00FFFF, 0 0 4px #00ff66; }
+  50% { text-shadow: 0 0 4px #00FFFF, 0 0 8px #00ff66; }
+}
+
+.main-content pre {
+  animation: crt-glow 1.5s infinite alternate;
+}
+
+.hljs {
+  font-family: 'Hack', monospace;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 1em;
+  background: #0d1117;
+  color: #c9d1d9;
+  border-radius: 6px;
+  box-shadow: 0 0 15px #000;
+}
+
+.mermaid-zoom-wrapper,
+.mermaid {
+  position: relative;
+  background: #111;
+  padding: 1em;
+  margin: 2em 0;
+  border-radius: 10px;
+  box-shadow:
+    0 0 3px #00ffe088,
+    0 0 6px #00ffe044;
+  border: 1px solid #00ffe022;
+}
+
+.fab-button {
+  display: flex;
+  align-items: center;
+  background-color: #ffcc00;
+  color: #000;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-right: 1rem;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 0 5px #ffcc00aa;
+}
+
+.fab-button:hover {
+  background-color: #ffaa00;
+  color: #111;
+  box-shadow: 0 0 10px #ffaa00cc;
+}
+
+.fab-button .fab-icon {
+  height: 20px;
+  margin-left: 6px;
+  filter: drop-shadow(0 0 2px #000);
+}
+
+@media (max-width: 600px) {
+  .fab-button {
+    font-size: 12px;
+    padding: 4px 8px;
+    margin-right: 0.5rem;
+  }
+
+  .fab-button .fab-icon {
+    height: 16px;
+  }
+}
