@@ -8,8 +8,6 @@
 
 [![Savior](https://i.imgur.com/fj3ZcYM.png)](https://www.unrealengine.com/marketplace/en-US/product/savior)
 
-{% include blueprint.html id="098hn006" %}
-
 ># Features
 
 | Productivity |
@@ -55,6 +53,8 @@
 ### Slot Methods:
 
 * [Synchronous Slot Methods](https://brunoxavierleite.github.io/Savior2API.github.io/Savior3/Savior3.html)
+➡️ [View Blueprint Graph in Docs](https://sav.hkh-interactive.com/docs/HelloWorld)
+
 
 
 ### Asynchronous Methods:
