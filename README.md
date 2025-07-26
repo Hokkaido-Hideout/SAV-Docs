@@ -620,6 +620,55 @@ The `USavior` class exposes a highly granular and flexible API to Unreal Engineâ
 
 ># Savior API
 
+  
+### Asynchronous Methods:
+
+* [Load Game Instance (Async)](/docs/SAVIOR_LoadGameInstance.html)
+* [Load Game Instance [+Callbacks]](/docs/SAVIOR_LoadGameInstance_Callback.html)
+* [Load Game Mode (Async)](/docs/SAVIOR_LoadGameMode.html)
+* [Load Game Mode [+Callbacks]](/docs/SAVIOR_LoadGameMode_Callback.html)
+* [Load Game World (Async)](/docs/SAVIOR_LoadGameWorld.html)
+* [Load Game World [+Callbacks]](/docs/SAVIOR_LoadGameWorld_Callback.html)
+* [Load Level (Async)](/docs/SAVIOR_LoadLevel.html)
+* [Load Level [+Callbacks]](/docs/SAVIOR_LoadLevel_Callback.html)
+* [Open Level (+HUD)](/docs/SAVIOR_OpenLevel.html)
+* [Open Level (+HUD) [+Callback]](/docs/SAVIOR_OpenLevel_Callback.html)
+* [Save Game Instance (Async)](/docs/SAVIOR_SaveGameInstance.html)
+* [Save Game Instance [+Callbacks]](/docs/SAVIOR_SaveGameInstance_Callback.html)
+* [Save Game Mode (Async)](/docs/SAVIOR_SaveGameMode.html)
+* [Save Game Mode [+Callbacks]](/docs/SAVIOR_SaveGameMode_Callback.html)
+* [Save Game World (Async)](/docs/SAVIOR_SaveGameMode.html)
+* [Save Game World [+Callbacks]](/docs/SAVIOR_SaveGameMode_Callback.html)
+* [Save Level (Async)](/docs/SAVIOR_SaveLevel.html)
+* [Save Level [+Callbacks]](/docs/SAVIOR_SaveLevel_Callback.html)
+
+
+### Serializable Interface:
+
+* [Event: On Loaded](/docs/OnLoaded.html)
+* [Event: On Marked (Auto-Destroy)](/docs/OnMarkedAutoDestroy.html)
+* [Event: On Prepare To Load](/docs/OnPrepareToLoad.html)
+* [Event: On Prepare To Save](/docs/OnPrepareToSave.html)
+* [Event: On Saved](/docs/OnSaved.html)
+
+
+### Procedural Interface:
+
+* [Event: On Begin Respawn](/docs/OnBeginRespawn.html)
+* [Event: On Finish Respawn](/docs/OnFinishRespawn.html)
+
+
+### HUD Custom Class:
+
+* [Event: On Begin Load-Screen](/docs/OnBeganLoadScreen.html)
+* [Event: On Finish Load-Screen](/docs/OnFinishedLoadScreen.html)
+* [Invoke Load Screen (Blur)](/docs/DisplayBlurLoadScreenHUD.html)
+* [Invoke Load Screen (Splash)](/docs/DisplaySplashLoadScreenHUD.html)
+* [Remove Load Screen](/docs/RemoveLoadScreen.html)
+* [Hide Slots UI](/docs/HideSlotPickerHUD.html)
+* [Show Slots UI](/docs/ShowSlotPickerHUD.html)
+
+
 ### Slot Methods:
 
 * [Get Chapter](/docs/GetChapter.html)
@@ -710,54 +759,5 @@ The `USavior` class exposes a highly granular and flexible API to Unreal Engineâ
 * [Set Default Player Name](/docs/SetDefaultPlayerName.html)
 * [Set Default Save Location](/docs/SetDefaultLocation.html)
 * [Write Slot to File (.SAV)](/docs/WriteSlotToFile.html)
-
-  
-### Asynchronous Methods:
-
-* [Load Game Instance (Async)](/docs/SAVIOR_LoadGameInstance.html)
-* [Load Game Instance [+Callbacks]](/docs/SAVIOR_LoadGameInstance_Callback.html)
-* [Load Game Mode (Async)](/docs/SAVIOR_LoadGameMode.html)
-* [Load Game Mode [+Callbacks]](/docs/SAVIOR_LoadGameMode_Callback.html)
-* [Load Game World (Async)](/docs/SAVIOR_LoadGameWorld.html)
-* [Load Game World [+Callbacks]](/docs/SAVIOR_LoadGameWorld_Callback.html)
-* [Load Level (Async)](/docs/SAVIOR_LoadLevel.html)
-* [Load Level [+Callbacks]](/docs/SAVIOR_LoadLevel_Callback.html)
-* [Open Level (+HUD)](/docs/SAVIOR_OpenLevel.html)
-* [Open Level (+HUD) [+Callback]](/docs/SAVIOR_OpenLevel_Callback.html)
-* [Save Game Instance (Async)](/docs/SAVIOR_SaveGameInstance.html)
-* [Save Game Instance [+Callbacks]](/docs/SAVIOR_SaveGameInstance_Callback.html)
-* [Save Game Mode (Async)](/docs/SAVIOR_SaveGameMode.html)
-* [Save Game Mode [+Callbacks]](/docs/SAVIOR_SaveGameMode_Callback.html)
-* [Save Game World (Async)](/docs/SAVIOR_SaveGameMode.html)
-* [Save Game World [+Callbacks]](/docs/SAVIOR_SaveGameMode_Callback.html)
-* [Save Level (Async)](/docs/SAVIOR_SaveLevel.html)
-* [Save Level [+Callbacks]](/docs/SAVIOR_SaveLevel_Callback.html)
-
-
-### Serializable Interface:
-
-* [Event: On Loaded](/docs/OnLoaded.html)
-* [Event: On Marked (Auto-Destroy)](/docs/OnMarkedAutoDestroy.html)
-* [Event: On Prepare To Load](/docs/OnPrepareToLoad.html)
-* [Event: On Prepare To Save](/docs/OnPrepareToSave.html)
-* [Event: On Saved](/docs/OnSaved.html)
-
-
-### Procedural Interface:
-
-* [Event: On Begin Respawn](/docs/OnBeginRespawn.html)
-* [Event: On Finish Respawn](/docs/OnFinishRespawn.html)
-
-
-### HUD Custom Class:
-
-* [Event: On Begin Load-Screen](/docs/OnBeganLoadScreen.html)
-* [Event: On Finish Load-Screen](/docs/OnFinishedLoadScreen.html)
-* [Invoke Load Screen (Blur)](/docs/DisplayBlurLoadScreenHUD.html)
-* [Invoke Load Screen (Splash)](/docs/DisplaySplashLoadScreenHUD.html)
-* [Remove Load Screen](/docs/RemoveLoadScreen.html)
-* [Hide Slots UI](/docs/HideSlotPickerHUD.html)
-* [Show Slots UI](/docs/ShowSlotPickerHUD.html)
-
 
 ---
