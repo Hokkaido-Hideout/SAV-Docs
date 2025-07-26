@@ -4,3 +4,6 @@ markdown: GFM
 
 plugins:
   - jekyll-remote-theme
+
+include:
+  - docs
