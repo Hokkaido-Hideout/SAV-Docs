@@ -623,7 +623,7 @@ The `USavior` class exposes a highly granular and flexible API to Unreal Engine�
 
 * [Synchronous Slot Methods](https://brunoxavierleite.github.io/Savior2API.github.io/Savior3/Savior3.html)  
 
-➡️ [View Graph in Docs](https://sav.hkh-interactive.com/docs/blueprint)
+➡️ [View Graph in Docs](https://sav.hkh-interactive.com/docs/helloworld)
 
 
 
