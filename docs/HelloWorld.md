@@ -1,1 +1,0 @@
-{% include blueprint.html id="098hn006" %}
