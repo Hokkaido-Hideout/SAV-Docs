@@ -1,0 +1,18 @@
+- desc: ''
+  name: Task Mode
+  type: EThreadSafety Enum
+- desc: ''
+  name: Feedback Text
+  type: Text
+- desc: ''
+  name: Feedback Font
+  type: Slate Font Info Structure (by ref)
+- desc: ''
+  name: Progress Bar Tint
+  type: Linear Color Structure (by ref)
+- desc: ''
+  name: Blur Power
+  type: Float
+- desc: ''
+  name: Out
+  type: Exec

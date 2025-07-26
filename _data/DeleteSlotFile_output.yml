@@ -1,0 +1,9 @@
+- desc: ''
+  name: Player ID
+  type: Integer
+- desc: ''
+  name: Success
+  type: Exec
+- desc: ''
+  name: Failed
+  type: Exec

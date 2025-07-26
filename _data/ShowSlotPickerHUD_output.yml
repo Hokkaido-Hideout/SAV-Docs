@@ -1,0 +1,6 @@
+- desc: ''
+  name: Picker Mode
+  type: ESlotPickerMode Enum
+- desc: ''
+  name: Out
+  type: Exec

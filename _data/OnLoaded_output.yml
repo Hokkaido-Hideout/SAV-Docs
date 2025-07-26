@@ -1,0 +1,9 @@
+- desc: ''
+  name: Output Delegate
+  type: Delegate
+- desc: ''
+  name: Out
+  type: Exec
+- desc: ''
+  name: Meta Data
+  type: Slot Meta- Data Structure (by ref)

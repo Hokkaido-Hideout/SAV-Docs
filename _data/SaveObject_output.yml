@@ -1,0 +1,9 @@
+- desc: ''
+  name: Object
+  type: Object Reference
+- desc: ''
+  name: Success
+  type: Exec
+- desc: ''
+  name: Failed
+  type: Exec

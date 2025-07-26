@@ -1,0 +1,9 @@
+- desc: ''
+  name: Out
+  type: Exec
+- desc: ''
+  name: Image Size
+  type: Vector 2D Structure
+- desc: ''
+  name: Return Value
+  type: Texture 2D Object Reference

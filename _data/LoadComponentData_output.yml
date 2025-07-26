@@ -1,0 +1,12 @@
+- desc: ''
+  name: Component
+  type: Actor Component Object Reference
+- desc: ''
+  name: Data
+  type: Savior Record Structure (by ref)
+- desc: ''
+  name: Success
+  type: Exec
+- desc: ''
+  name: Failed
+  type: Exec

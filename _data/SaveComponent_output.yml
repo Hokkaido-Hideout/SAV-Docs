@@ -1,0 +1,12 @@
+- desc: ''
+  name: Context
+  type: Object Reference
+- desc: ''
+  name: Component
+  type: Actor Component Object Reference
+- desc: ''
+  name: Success
+  type: Exec
+- desc: ''
+  name: Failed
+  type: Exec

@@ -1,0 +1,12 @@
+- desc: ''
+  name: Output Delegate
+  type: Delegate
+- desc: ''
+  name: Out
+  type: Exec
+- desc: ''
+  name: Savior
+  type: Savior II Object Reference
+- desc: ''
+  name: Success
+  type: Boolean
