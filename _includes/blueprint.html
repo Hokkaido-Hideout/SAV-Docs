@@ -1,3 +1,5 @@
+<h2 style="margin-top:2em;">🧩 Blueprint Node: {{ include.title }}</h2>
+
 <iframe
   src="https://blueprintue.com/render/{{ include.id }}/"
   width="100%"
@@ -6,3 +8,30 @@
   loading="lazy"
   style="border:1px solid #ccc; border-radius:8px; margin:1em 0;"
 ></iframe>
+
+<h3>🧠 Node Purpose</h3>
+<blockquote>{{ include.description }}</blockquote>
+
+{% if include.input_pins %}
+<h3>📥 Input Pins</h3>
+<table>
+  <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+  <tbody>
+    {% for pin in include.input_pins %}
+      <tr><td>{{ pin.name }}</td><td>{{ pin.type }}</td><td>{{ pin.desc }}</td></tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endif %}
+
+{% if include.output_pins %}
+<h3>📤 Output Pins</h3>
+<table>
+  <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+  <tbody>
+    {% for pin in include.output_pins %}
+      <tr><td>{{ pin.name }}</td><td>{{ pin.type }}</td><td>{{ pin.desc }}</td></tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endif %}
