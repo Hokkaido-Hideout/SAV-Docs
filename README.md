@@ -48,63 +48,6 @@
 
 ---
 
-># Savior API
-
-### Slot Methods:
-
-* [Synchronous Slot Methods](https://brunoxavierleite.github.io/Savior2API.github.io/Savior3/Savior3.html)  
-
-➡️ [View Graph in Docs](https://sav.hkh-interactive.com/docs/blueprint)
-
-
-
-### Asynchronous Methods:
-
-* [Load Game Instance (Async)](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_LoadGameInstance/nodes/UK2Node_AsyncAction.html)
-* [Load Game Instance [+Callbacks]](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_LoadGameInstance_Callback/nodes/UK2Node_AsyncAction.html)
-* [Load Game Mode (Async)](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_LoadGameMode/nodes/UK2Node_AsyncAction.html)
-* [Load Game Mode [+Callbacks]](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_LoadGameMode_Callback/nodes/UK2Node_AsyncAction.html)
-* [Load Game World (Async)](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_LoadGameWorld/nodes/UK2Node_AsyncAction.html)
-* [Load Game World [+Callbacks]](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_LoadGameWorld_Callback/nodes/UK2Node_AsyncAction.html)
-* [Load Level (Async)](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_LoadLevel/nodes/UK2Node_AsyncAction.html)
-* [Load Level [+Callbacks]](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_LoadLevel_Callback/nodes/UK2Node_AsyncAction.html)
-* [Open Level (+HUD)](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_OpenLevel/nodes/UK2Node_AsyncAction.html)
-* [Open Level (+HUD) [+Callback]](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_OpenLevel_Callback/nodes/UK2Node_AsyncAction.html)
-* [Save Game Instance (Async)](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_SaveGameInstance/nodes/UK2Node_AsyncAction.html)
-* [Save Game Instance [+Callbacks]](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_SaveGameInstance_Callback/nodes/UK2Node_AsyncAction.html)
-* [Save Game Mode (Async)](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_SaveGameMode/nodes/UK2Node_AsyncAction.html)
-* [Save Game Mode [+Callbacks]](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_SaveGameMode_Callback/nodes/UK2Node_AsyncAction.html)
-* [Save Game World (Async)](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_SaveGameWorld/nodes/UK2Node_AsyncAction.html)
-* [Save Game World [+Callbacks]](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_SaveGameMode_Callback/nodes/UK2Node_AsyncAction.html)
-* [Save Level (Async)](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_SaveLevel/nodes/UK2Node_AsyncAction.html)
-* [Save Level [+Callbacks]](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_SaveLevel_Callback/nodes/UK2Node_AsyncAction.html)
-
-
-### Serializable Interface:
-
-* [Event: On Loaded](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_Serializable/nodes/OnLoaded.html)
-* [Event: On Marked (Auto-Destroy)](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_Serializable/nodes/OnMarkedAutoDestroy.html)
-* [Event: On Prepare To Load](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_Serializable/nodes/OnPrepareToLoad.html)
-* [Event: On Prepare To Save](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_Serializable/nodes/OnPrepareToSave.html)
-* [Event: On Saved](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_Serializable/nodes/OnSaved.html)
-
-### Procedural Interface:
-
-* [Event: On Begin Respawn](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_Procedural/nodes/OnBeginRespawn.html)
-* [Event: On Finish Respawn](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_Procedural/nodes/OnFinishRespawn.html)
-
-### HUD Custom Class:
-
-* [Event: On Begin Load-Screen](https://brunoxavierleite.github.io/Savior2API.github.io/HUD_SaviorUI/nodes/OnBeganLoadScreen.html)
-* [Event: On Finish Load-Screen](https://brunoxavierleite.github.io/Savior2API.github.io/HUD_SaviorUI/nodes/OnFinishedLoadScreen.html)
-* [Invoke Load Screen (Blur)](https://brunoxavierleite.github.io/Savior2API.github.io/HUD_SaviorUI/nodes/DisplayBlurLoadScreenHUD.html)
-* [Invoke Load Screen (Splash)](https://brunoxavierleite.github.io/Savior2API.github.io/HUD_SaviorUI/nodes/DisplaySplashLoadScreenHUD.html)
-* [Remove Load Screen](https://brunoxavierleite.github.io/Savior2API.github.io/HUD_SaviorUI/nodes/RemoveLoadScreen.html)
-* [Hide Slots UI](https://brunoxavierleite.github.io/Savior2API.github.io/HUD_SaviorUI/nodes/HideSlotPickerHUD.html)
-* [Show Slots UI](https://brunoxavierleite.github.io/Savior2API.github.io/HUD_SaviorUI/nodes/ShowSlotPickerHUD.html)
-
----
-
 ># Quick Guides
 
 
@@ -670,3 +613,63 @@ This class provides a runtime object that handles saving and loading of game sta
 ## ✅ Summary
 
 The `USavior` class exposes a highly granular and flexible API to Unreal Engine’s Blueprint system, empowering developers to implement robust save/load functionality, auto-respawn logic, UI/UX enhancements, and system configuration—entirely through C++ or Blueprints.
+
+
+---
+
+># Savior API
+
+### Slot Methods:
+
+* [Synchronous Slot Methods](https://brunoxavierleite.github.io/Savior2API.github.io/Savior3/Savior3.html)  
+
+➡️ [View Graph in Docs](https://sav.hkh-interactive.com/docs/blueprint)
+
+
+
+### Asynchronous Methods:
+
+* [Load Game Instance (Async)](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_LoadGameInstance/nodes/UK2Node_AsyncAction.html)
+* [Load Game Instance [+Callbacks]](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_LoadGameInstance_Callback/nodes/UK2Node_AsyncAction.html)
+* [Load Game Mode (Async)](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_LoadGameMode/nodes/UK2Node_AsyncAction.html)
+* [Load Game Mode [+Callbacks]](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_LoadGameMode_Callback/nodes/UK2Node_AsyncAction.html)
+* [Load Game World (Async)](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_LoadGameWorld/nodes/UK2Node_AsyncAction.html)
+* [Load Game World [+Callbacks]](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_LoadGameWorld_Callback/nodes/UK2Node_AsyncAction.html)
+* [Load Level (Async)](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_LoadLevel/nodes/UK2Node_AsyncAction.html)
+* [Load Level [+Callbacks]](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_LoadLevel_Callback/nodes/UK2Node_AsyncAction.html)
+* [Open Level (+HUD)](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_OpenLevel/nodes/UK2Node_AsyncAction.html)
+* [Open Level (+HUD) [+Callback]](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_OpenLevel_Callback/nodes/UK2Node_AsyncAction.html)
+* [Save Game Instance (Async)](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_SaveGameInstance/nodes/UK2Node_AsyncAction.html)
+* [Save Game Instance [+Callbacks]](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_SaveGameInstance_Callback/nodes/UK2Node_AsyncAction.html)
+* [Save Game Mode (Async)](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_SaveGameMode/nodes/UK2Node_AsyncAction.html)
+* [Save Game Mode [+Callbacks]](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_SaveGameMode_Callback/nodes/UK2Node_AsyncAction.html)
+* [Save Game World (Async)](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_SaveGameWorld/nodes/UK2Node_AsyncAction.html)
+* [Save Game World [+Callbacks]](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_SaveGameMode_Callback/nodes/UK2Node_AsyncAction.html)
+* [Save Level (Async)](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_SaveLevel/nodes/UK2Node_AsyncAction.html)
+* [Save Level [+Callbacks]](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_SaveLevel_Callback/nodes/UK2Node_AsyncAction.html)
+
+
+### Serializable Interface:
+
+* [Event: On Loaded](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_Serializable/nodes/OnLoaded.html)
+* [Event: On Marked (Auto-Destroy)](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_Serializable/nodes/OnMarkedAutoDestroy.html)
+* [Event: On Prepare To Load](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_Serializable/nodes/OnPrepareToLoad.html)
+* [Event: On Prepare To Save](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_Serializable/nodes/OnPrepareToSave.html)
+* [Event: On Saved](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_Serializable/nodes/OnSaved.html)
+
+### Procedural Interface:
+
+* [Event: On Begin Respawn](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_Procedural/nodes/OnBeginRespawn.html)
+* [Event: On Finish Respawn](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_Procedural/nodes/OnFinishRespawn.html)
+
+### HUD Custom Class:
+
+* [Event: On Begin Load-Screen](https://brunoxavierleite.github.io/Savior2API.github.io/HUD_SaviorUI/nodes/OnBeganLoadScreen.html)
+* [Event: On Finish Load-Screen](https://brunoxavierleite.github.io/Savior2API.github.io/HUD_SaviorUI/nodes/OnFinishedLoadScreen.html)
+* [Invoke Load Screen (Blur)](https://brunoxavierleite.github.io/Savior2API.github.io/HUD_SaviorUI/nodes/DisplayBlurLoadScreenHUD.html)
+* [Invoke Load Screen (Splash)](https://brunoxavierleite.github.io/Savior2API.github.io/HUD_SaviorUI/nodes/DisplaySplashLoadScreenHUD.html)
+* [Remove Load Screen](https://brunoxavierleite.github.io/Savior2API.github.io/HUD_SaviorUI/nodes/RemoveLoadScreen.html)
+* [Hide Slots UI](https://brunoxavierleite.github.io/Savior2API.github.io/HUD_SaviorUI/nodes/HideSlotPickerHUD.html)
+* [Show Slots UI](https://brunoxavierleite.github.io/Savior2API.github.io/HUD_SaviorUI/nodes/ShowSlotPickerHUD.html)
+
+---
