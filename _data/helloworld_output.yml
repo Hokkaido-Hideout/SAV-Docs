@@ -1,0 +1,3 @@
+- name: ChapterName
+  type: FName
+  desc: The name of the chapter returned.
