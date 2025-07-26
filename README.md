@@ -54,7 +54,7 @@
 
 * [Synchronous Slot Methods](https://brunoxavierleite.github.io/Savior2API.github.io/Savior3/Savior3.html)  
 
-![Blueprint Graph](https://blueprintue.com/api/render/098hn006/image)
+➡️ [View Graph in Docs](https://sav.hkh-interactive.com/docs/helloworld)
 
 
 
