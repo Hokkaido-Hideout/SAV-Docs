@@ -34,17 +34,18 @@
 
 ># Contents
 
-[Installation](#installation)<br>
-[How to Setup a Slot](#how-to-setup-a-slot)<br>
-[How to Save & Load](#how-to-save-load)<br>
-[How to Setup Pickups](#how-to-setup-pickups)<br>
-[How to Setup Procedural Actors](#how-to-setup-procedural-actors)<br>
-[Understanding SGUID](#understanding-sguid)<br>
-[Tips & Tricks](#tips-n-tricks)<br>
-[Savior in C++](#savior-in-c)<br>
-[FAQ](#faqs)<br>
-[Extras](#extras)<br>
-[Technical Specifications](#technical-specifications)<br>
+[Installation](#installation)  
+[How to Setup a Slot](#how-to-setup-a-slot)  
+[How to Save & Load](#how-to-save-load)  
+[How to Setup Pickups](#how-to-setup-pickups)  
+[How to Setup Procedural Actors](#how-to-setup-procedural-actors)  
+[Understanding SGUID](#understanding-sguid)  
+[Tips & Tricks](#tips-n-tricks)  
+[Savior in C++](#savior-in-c)  
+[FAQ](#faqs)  
+[Extras](#extras)  
+[Technical Specifications](#technical-specifications)  
+[Savior API](#savior-api)
 
 ---
 
@@ -621,55 +622,142 @@ The `USavior` class exposes a highly granular and flexible API to Unreal Engine�
 
 ### Slot Methods:
 
-* [Synchronous Slot Methods](https://brunoxavierleite.github.io/Savior2API.github.io/Savior3/Savior3.html)  
+* [Get Chapter](/docs/GetChapter.html)
+* [Get Object of Class](/docs/GetClassDefaultObject.html)
+* [Get Play Time](/docs/GetPlayTime.html)
+* [Get Player Level](/docs/GetPlayerLevel.html)
+* [Get Player Name](/docs/GetPlayerName.html)
+* [Get Progress](/docs/GetProgress.html)
+* [Get Save Date](/docs/GetSaveDate.html)
+* [Get Save Location](/docs/GetSaveLocation.html)
+* [New Object GUID](/docs/NewObjectGUID.html)
+* [New Object Instance](/docs/NewObjectInstance.html)
+* [New Object Instance](/docs/NewNamedObjectInstance.html)
+* [Set Chapter](/docs/SetChapter.html)
+* [Set Play Time](/docs/SetPlayTime.html)
+* [Set Player Level](/docs/SetPlayerLevel.html)
+* [Set Player Name](/docs/SetPlayerName.html)
+* [Set Progress](/docs/SetProgress.html)
+* [Set Save Date](/docs/SetSaveDate.html)
+* [Set Save Location](/docs/SetSaveLocation.html)
+* [Calculate Load Workload](/docs/GetLoadWorkload.html)
+* [Calculate Save Workload](/docs/GetSaveWorkload.html)
+* [Create Once : SGUID](/docs/CreateSGUID.html)
+* [Delete Slot's File (.SAV)](/docs/DeleteSlotFile.html)
+* [Find Actor With GUID](/docs/FindActorWithGUID.html)
+* [Find Slot's File (.SAV)](/docs/FindSlotFile.html)
+* [Get Load Progress](/docs/GetLoadProgress.html)
+* [Get Loads Done](/docs/GetLoadsDone.html)
+* [Get Save Progress](/docs/GetSaveProgress.html)
+* [Get Save-Date ISO](/docs/GetSaveDateISO.html)
+* [Get Save-Time ISO](/docs/GetSaveTimeISO.html)
+* [Get Saves Done](/docs/GetSavesDone.html)
+* [Get Slot Data](/docs/GetSlotDataCopy.html)
+* [Get Slot Meta-Data](/docs/GetSlotMetaData.html)
+* [Get Slot Thumbnail](/docs/GetSlotThumbnail.html)
+* [Get Thread Safety](/docs/GetThreadSafety.html)
+* [Is Actor Marked (Auto-Destroy)](/docs/IsActorMarkedAutoDestroy.html)
+* [Is Component Marked (Auto-Destroy)](/docs/IsComponentMarkedAutoDestroy.html)
+* [Is Object Marked (Auto-Destroy)](/docs/IsObjectMarkedAutoDestroy.html)
+* [Load Actor](/docs/LoadActor.html)
+* [Load Actor : (Slot Data)](/docs/LoadActorData.html)
+* [Load Actor : (Static)](/docs/StaticLoadActor.html)
+* [Load Actor Hierarchy](/docs/LoadActorHierarchy.html)
+* [Load Actor Hierarchy by GUID](/docs/LoadActorHierarchyWithGUID.html)
+* [Load Actor by GUID](/docs/LoadActorWithGUID.html)
+* [Load Actors of Class](/docs/LoadActorsOfClass.html)
+* [Load Animation](/docs/LoadAnimation.html)
+* [Load Component](/docs/LoadComponent.html)
+* [Load Component : (Slot Data)](/docs/LoadComponentData.html)
+* [Load Component : (Static)](/docs/StaticLoadComponent.html)
+* [Load Component by GUID](/docs/LoadComponentWithGUID.html)
+* [Load Dynamic Materials (Actor)](/docs/LoadActorMaterials.html)
+* [Load GI Singleton](/docs/LoadGameInstanceSingleTon.html)
+* [Load Game Instance](/docs/LoadGameInstance.html)
+* [Load Game Mode](/docs/LoadGameMode.html)
+* [Load Game World](/docs/LoadGameWorld.html)
+* [Load Level](/docs/LoadLevel.html)
+* [Load Object](/docs/LoadObject.html)
+* [Load Object : (Slot Data)](/docs/LoadObjectData.html)
+* [Load Object : (Static)](/docs/StaticLoadObject.html)
+* [Load Object Hierarchy](/docs/LoadObjectHierarchy.html)
+* [Load Objects of Class](/docs/LoadObjectsOfClass.html)
+* [Load Slot Meta-Data (.SAV)](/docs/LoadSlotMetaData.html)
+* [Mark Actor (Auto-Destroy)](/docs/MarkActorAutoDestroyed.html)
+* [Mark Component (Auto-Destroy)](/docs/MarkComponentAutoDestroyed.html)
+* [Mark Object (Auto-Destroy)](/docs/MarkObjectAutoDestroyed.html)
+* [Matches : SGUID](/docs/MatchesGUID.html)
+* [New Slot Instance](/docs/NewSlotInstance.html)
+* [Read Slot from File (.SAV)](/docs/ReadSlotFromFile.html)
+* [Save Actor](/docs/SaveActor.html)
+* [Save Actor Hierarchy](/docs/SaveActorHierarchy.html)
+* [Save Actors of Class](/docs/SaveActorsOfClass.html)
+* [Save Animation](/docs/SaveAnimation.html)
+* [Save Component](/docs/SaveComponent.html)
+* [Save Dynamic Materials (Actor)](/docs/SaveActorMaterials.html)
+* [Save GI Singleton](/docs/SaveGameInstanceSingleTon.html)
+* [Save Game Instance](/docs/SaveGameInstance.html)
+* [Save Game Mode](/docs/SaveGameMode.html)
+* [Save Game World](/docs/SaveGameWorld.html)
+* [Save Level](/docs/SaveLevel.html)
+* [Save Object](/docs/SaveObject.html)
+* [Save Object Hierarchy](/docs/SaveObjectHierarchy.html)
+* [Save Objects of Class](/docs/SaveObjectsOfClass.html)
+* [Save Slot Meta-Data (.SAV)](/docs/SaveSlotMetaData.html)
+* [Set Default Chapter](/docs/SetDefaultChapter.html)
+* [Set Default Player ID](/docs/SetDefaultPlayerID.html)
+* [Set Default Player Level](/docs/SetDefaultPlayerLevel.html)
+* [Set Default Player Name](/docs/SetDefaultPlayerName.html)
+* [Set Default Save Location](/docs/SetDefaultLocation.html)
+* [Write Slot to File (.SAV)](/docs/WriteSlotToFile.html)
 
-➡️ [View Graph in Docs](https://sav.hkh-interactive.com/docs/helloworld)
-
-
-
+  
 ### Asynchronous Methods:
 
-* [Load Game Instance (Async)](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_LoadGameInstance/nodes/UK2Node_AsyncAction.html)
-* [Load Game Instance [+Callbacks]](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_LoadGameInstance_Callback/nodes/UK2Node_AsyncAction.html)
-* [Load Game Mode (Async)](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_LoadGameMode/nodes/UK2Node_AsyncAction.html)
-* [Load Game Mode [+Callbacks]](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_LoadGameMode_Callback/nodes/UK2Node_AsyncAction.html)
-* [Load Game World (Async)](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_LoadGameWorld/nodes/UK2Node_AsyncAction.html)
-* [Load Game World [+Callbacks]](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_LoadGameWorld_Callback/nodes/UK2Node_AsyncAction.html)
-* [Load Level (Async)](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_LoadLevel/nodes/UK2Node_AsyncAction.html)
-* [Load Level [+Callbacks]](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_LoadLevel_Callback/nodes/UK2Node_AsyncAction.html)
-* [Open Level (+HUD)](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_OpenLevel/nodes/UK2Node_AsyncAction.html)
-* [Open Level (+HUD) [+Callback]](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_OpenLevel_Callback/nodes/UK2Node_AsyncAction.html)
-* [Save Game Instance (Async)](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_SaveGameInstance/nodes/UK2Node_AsyncAction.html)
-* [Save Game Instance [+Callbacks]](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_SaveGameInstance_Callback/nodes/UK2Node_AsyncAction.html)
-* [Save Game Mode (Async)](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_SaveGameMode/nodes/UK2Node_AsyncAction.html)
-* [Save Game Mode [+Callbacks]](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_SaveGameMode_Callback/nodes/UK2Node_AsyncAction.html)
-* [Save Game World (Async)](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_SaveGameWorld/nodes/UK2Node_AsyncAction.html)
-* [Save Game World [+Callbacks]](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_SaveGameMode_Callback/nodes/UK2Node_AsyncAction.html)
-* [Save Level (Async)](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_SaveLevel/nodes/UK2Node_AsyncAction.html)
-* [Save Level [+Callbacks]](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_SaveLevel_Callback/nodes/UK2Node_AsyncAction.html)
+* [Load Game Instance (Async)](/docs/SAVIOR_LoadGameInstance.html)
+* [Load Game Instance [+Callbacks]](/docs/SAVIOR_LoadGameInstance_Callback.html)
+* [Load Game Mode (Async)](/docs/SAVIOR_LoadGameMode.html)
+* [Load Game Mode [+Callbacks]](/docs/SAVIOR_LoadGameMode_Callback.html)
+* [Load Game World (Async)](/docs/SAVIOR_LoadGameWorld.html)
+* [Load Game World [+Callbacks]](/docs/SAVIOR_LoadGameWorld_Callback.html)
+* [Load Level (Async)](/docs/SAVIOR_LoadLevel.html)
+* [Load Level [+Callbacks]](/docs/SAVIOR_LoadLevel_Callback.html)
+* [Open Level (+HUD)](/docs/SAVIOR_OpenLevel.html)
+* [Open Level (+HUD) [+Callback]](/docs/SAVIOR_OpenLevel_Callback.html)
+* [Save Game Instance (Async)](/docs/SAVIOR_SaveGameInstance.html)
+* [Save Game Instance [+Callbacks]](/docs/SAVIOR_SaveGameInstance_Callback.html)
+* [Save Game Mode (Async)](/docs/SAVIOR_SaveGameMode.html)
+* [Save Game Mode [+Callbacks]](/docs/SAVIOR_SaveGameMode_Callback.html)
+* [Save Game World (Async)](/docs/SAVIOR_SaveGameMode.html)
+* [Save Game World [+Callbacks]](/docs/SAVIOR_SaveGameMode_Callback.html)
+* [Save Level (Async)](/docs/SAVIOR_SaveLevel.html)
+* [Save Level [+Callbacks]](/docs/SAVIOR_SaveLevel_Callback.html)
 
 
 ### Serializable Interface:
 
-* [Event: On Loaded](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_Serializable/nodes/OnLoaded.html)
-* [Event: On Marked (Auto-Destroy)](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_Serializable/nodes/OnMarkedAutoDestroy.html)
-* [Event: On Prepare To Load](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_Serializable/nodes/OnPrepareToLoad.html)
-* [Event: On Prepare To Save](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_Serializable/nodes/OnPrepareToSave.html)
-* [Event: On Saved](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_Serializable/nodes/OnSaved.html)
+* [Event: On Loaded](/docs/OnLoaded.html)
+* [Event: On Marked (Auto-Destroy)](/docs/OnMarkedAutoDestroy.html)
+* [Event: On Prepare To Load](/docs/OnPrepareToLoad.html)
+* [Event: On Prepare To Save](/docs/OnPrepareToSave.html)
+* [Event: On Saved](/docs/OnSaved.html)
+
 
 ### Procedural Interface:
 
-* [Event: On Begin Respawn](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_Procedural/nodes/OnBeginRespawn.html)
-* [Event: On Finish Respawn](https://brunoxavierleite.github.io/Savior2API.github.io/SAVIOR_Procedural/nodes/OnFinishRespawn.html)
+* [Event: On Begin Respawn](/docs/OnBeginRespawn.html)
+* [Event: On Finish Respawn](/docs/OnFinishRespawn.html)
+
 
 ### HUD Custom Class:
 
-* [Event: On Begin Load-Screen](https://brunoxavierleite.github.io/Savior2API.github.io/HUD_SaviorUI/nodes/OnBeganLoadScreen.html)
-* [Event: On Finish Load-Screen](https://brunoxavierleite.github.io/Savior2API.github.io/HUD_SaviorUI/nodes/OnFinishedLoadScreen.html)
-* [Invoke Load Screen (Blur)](https://brunoxavierleite.github.io/Savior2API.github.io/HUD_SaviorUI/nodes/DisplayBlurLoadScreenHUD.html)
-* [Invoke Load Screen (Splash)](https://brunoxavierleite.github.io/Savior2API.github.io/HUD_SaviorUI/nodes/DisplaySplashLoadScreenHUD.html)
-* [Remove Load Screen](https://brunoxavierleite.github.io/Savior2API.github.io/HUD_SaviorUI/nodes/RemoveLoadScreen.html)
-* [Hide Slots UI](https://brunoxavierleite.github.io/Savior2API.github.io/HUD_SaviorUI/nodes/HideSlotPickerHUD.html)
-* [Show Slots UI](https://brunoxavierleite.github.io/Savior2API.github.io/HUD_SaviorUI/nodes/ShowSlotPickerHUD.html)
+* [Event: On Begin Load-Screen](/docs/OnBeganLoadScreen.html)
+* [Event: On Finish Load-Screen](/docs/OnFinishedLoadScreen.html)
+* [Invoke Load Screen (Blur)](/docs/DisplayBlurLoadScreenHUD.html)
+* [Invoke Load Screen (Splash)](/docs/DisplaySplashLoadScreenHUD.html)
+* [Remove Load Screen](/docs/RemoveLoadScreen.html)
+* [Hide Slots UI](/docs/HideSlotPickerHUD.html)
+* [Show Slots UI](/docs/ShowSlotPickerHUD.html)
+
 
 ---
