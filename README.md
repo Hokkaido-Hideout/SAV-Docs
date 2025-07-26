@@ -34,6 +34,7 @@
 
 ># Contents
 
+[Savior API](#savior-api)  
 [Installation](#installation)  
 [How to Setup a Slot](#how-to-setup-a-slot)  
 [How to Save & Load](#how-to-save-load)  
@@ -45,7 +46,6 @@
 [FAQ](#faqs)  
 [Extras](#extras)  
 [Technical Specifications](#technical-specifications)  
-[Savior API](#savior-api)
 
 ---
 
