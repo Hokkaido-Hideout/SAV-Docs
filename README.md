@@ -45,7 +45,7 @@
 [Savior in C++](#savior-in-c)  
 [FAQ](#faqs)  
 [Extras](#extras)  
-[Technical Specifications](#technical-specifications)  
+[Technical Specifications](#savior-core--c-api)  
 
 ---
 
