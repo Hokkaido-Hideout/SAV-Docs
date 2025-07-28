@@ -43,9 +43,9 @@
 [Understanding SGUID](#understanding-sguid)  
 [Tips & Tricks](#tips-n-tricks)  
 [Savior in C++](#savior-in-c)  
-[FAQ](#faqs)  
-[Extras](#extras)  
-[Technical Specifications](#savior-core--c-api)  
+[Specifications](#savior-core--c-api)  
+[Extras](#extras) 
+[FAQ](#faqs)   
 
 ---
 
