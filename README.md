@@ -60,10 +60,15 @@ You must have a valid Epic games account to purchase any products from Unreal Ma
 
 ## How to Setup a Slot
 
-As always, create a Slot Asset on Asset Browser;
-Opening the Asset you can quickly adjust default Properties such as Default Player Name, Levels Thumbnails, etc:
+Create a Slot Asset on Asset Browser (right-click), look for `HKH >> New Slot` menu;
+You can also create a new slot at the root Content folder by opening the File main menu and clicking `New Slot...` under the `[HKH] Savior` sub-category.
 
-![1](https://d3kjluh73b9h9o.cloudfront.net/original/4X/c/3/b/c3bdef167fa243f8d9973e63414f0fcc6db64841.png)
+![1](https://www.dropbox.com/scl/fi/vpzm6gjfytm36vvu59zx7/Svr2.png?rlkey=ew08n6ns8s2qa1fbhtihw4w8y&st=u6qyxb5i&raw=1)  
+![1.1](https://www.dropbox.com/scl/fi/291yp91lmrva1b479en6f/Svr3.png?rlkey=kqrao44gaccpxp4o4t7l1suas&st=fq0suuv3&raw=1)  
+
+
+
+When opening the Asset you can quickly adjust default Properties such as Default Player Name, Levels Thumbnails, etc:
 
 ![2](https://d3kjluh73b9h9o.cloudfront.net/original/4X/a/4/6/a46bca0c4a52deb7d0c9aef426f9a2567276e5f8.png)
 
